@@ -3,10 +3,10 @@ Nachos系统包括两部分：模拟的硬件系统以及在这些硬件之上�
 ## Lab1
 Nachos系统的安装和调试
 * 基本环境配置
-  ** 安装gcc MIPS交叉编译器
+  * 安装gcc MIPS交叉编译器
 * 测试Nachos
-  ** 进入code/thread/ 运行make命令，可编译生成一个基本的Nachos内核(后续实验将对该内核进行扩展，包括进程同步互斥，文件系统和系统调用)
-  ** gdb调试
+  * 进入code/thread/ 运行make命令，可编译生成一个基本的Nachos内核(后续实验将对该内核进行扩展，包括进程同步互斥，文件系统和系统调用)
+  * gdb调试
 ## Lab2
 Nachos的Makefiles
 * code/下子目录的Makefile文件
