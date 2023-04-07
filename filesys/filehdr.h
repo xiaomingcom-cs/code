@@ -37,9 +37,11 @@
 
 class FileHeader {
   public:
-    bool Allocate(BitMap *bitMap, int fileSize);// Initialize a file header, 
-						//  including allocating space 
-						//  on disk for the file data
+    FileHeader();
+    bool Allocate(BitMap *bitMap, int fileSize); // Initialize a file header,
+                                                 //  including allocating space
+                                                 //  on disk for the file data
+    bool Allocate(BitMap *bitmap, int fileSize, int incrementBytes);
     void Deallocate(BitMap *bitMap);  		// De-allocate this file's 
 						//  data blocks
 

@@ -84,10 +84,11 @@ class OpenFile {
     int Length(); 			// Return the number of bytes in the
 					// file (this interface is simpler 
 					// than the UNIX idiom -- lseek to 
-					// end of file, tell, lseek back 
-    
-  private:
-    FileHeader *hdr;			// Header for this file 
+					// end of file, tell, lseek back
+		void WriteBack();
+
+	private:
+		FileHeader *hdr;			// Header for this file 
     int seekPosition;			// Current position within the file
     int hdrSector;
 };
